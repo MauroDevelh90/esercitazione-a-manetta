@@ -1,0 +1,72 @@
+body {
+    background-color: #fafbff;
+    }
+
+/* Selettori del nav */
+body nav {
+    background-color: #234567;
+    padding: 20px;
+}
+
+nav > a {
+color: white;
+text-decoration: none;
+transition: 0.3s;
+margin-left: 10px;
+}
+
+nav > a:hover {
+    color: #ff784d;
+}
+
+/* Selettori del section */
+section > img {
+    height: 300px;
+}
+
+/* Selettori dell'aside */
+body aside {
+    background-color: #edefff;
+}
+
+/* GRID MAIN start*/
+
+body > main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+     "principale barra-dx"
+     "principale-res principale-res"
+     "barra-res barra-res";
+}
+
+body nav {
+    grid-area: principale;
+}
+
+body aside {
+    grid-area: barra-dx;
+}
+
+/* GRID MAIN end */
+
+
+/* MEDIA QUERY START */
+
+@media (max-width: 990px) {
+    body nav {
+        grid-area: principale-res;
+    }
+
+    body aside {
+        grid-area: barra-res;
+    }
+
+    section > img {
+        display: block;
+        width: 100vw;
+        height: initial;
+    }
+}
+
+/* MEDIA QUERY END */
