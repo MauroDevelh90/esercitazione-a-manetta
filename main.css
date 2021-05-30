@@ -60,6 +60,8 @@ body aside {
 
     body aside {
         grid-area: barra-res;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     section > img {
@@ -70,3 +72,42 @@ body aside {
 }
 
 /* MEDIA QUERY END */
+
+body > footer {
+    background-color: #012345;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+footer > form {
+    color: white;
+    text-align: right;
+    
+}
+
+footer > form > button {
+    background-color: #ff784d;
+    color: white;
+    transition: 0.4s;
+}
+
+footer > form > button:hover {
+    background-color: white;
+    color: #ff784d;
+}    
+
+section {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+aside {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
